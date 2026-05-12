@@ -15,5 +15,12 @@
         <button type="submit">Acessar</button>
         <button type="reset">Limpar</button>
     </form>
+    
+    <?php
+
+    echo $_GET['mensagem'] ?? "";
+
+    ?>
+
 </body>
 </html>
