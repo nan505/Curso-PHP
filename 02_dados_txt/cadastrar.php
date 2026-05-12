@@ -7,4 +7,8 @@ $cpf = $_POST['cpf'];
 
 echo "{$nome}, {$email}, {$telefone}, {$cpf}";
 
+$arquivo = fopen("adotantes.txt", "a");
+fwrite($arquivo, "$nome / $email / $telefone / $cpf \n");
+fclose($arquivo);
+
 ?>
