@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Cadastro de Adotantes</h1>
-    <form action="cadastrar.php" method="post">
+    <form action="adotantes-salvar.php" method="post">
         <label>Nome completo:</label>
         <input type="text" name="nome" required><br>
         <label>E-mail:</label>

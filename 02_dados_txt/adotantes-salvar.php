@@ -5,10 +5,8 @@ $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $cpf = $_POST['cpf'];
 
-echo "{$nome}, {$email}, {$telefone}, {$cpf}";
-
 $arquivo = fopen("adotantes.txt", "a");
-fwrite($arquivo, "$nome / $email / $telefone / $cpf \n");
+fwrite($arquivo, "$nome \t $email \t $telefone \t $cpf \n");
 fclose($arquivo);
 
 ?>
