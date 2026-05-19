@@ -71,6 +71,21 @@
             </p>
         </div>
 
+        <hr>
+        <h2>Listagem de pacientes</h2>
+
+        <?php
+
+        $arquivo = fopen("pacientes.txt", "r");
+
+        while(!feof($arquivo) ){
+            $linha = fgets($arquivo);
+            echo "$linha <br>";
+        }
+        fclose($arquivo);
+
+        ?>
+
     </section>
 </body>
 </html>

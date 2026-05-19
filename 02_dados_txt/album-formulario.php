@@ -32,6 +32,20 @@
             </p>
         </div>
 
+        <hr>
+        <h2>Listagem de álbuns</h2>
+        <?php
+
+        $arquivo = fopen("albuns.txt", "r");
+        
+        while(!feof($arquivo) ){
+            $linha = fgets($arquivo);
+            echo "$linha <br>";
+        }
+        fclose($arquivo);
+        
+        ?>
+
     </section>
 </body>
 </html>

@@ -36,6 +36,21 @@
             </p>
         </div>
 
+        <hr>
+        <h2>Listagem de eventos</h2>
+
+        <?php
+        
+        $arquivo = fopen("eventos.txt", "r");
+
+        while(!feof($arquivo) ){
+            $linha = fgets($arquivo);
+            echo "$linha <br>";
+        }
+        fclose($arquivo);
+
+        ?>
+
     </section>
 </body>
 </html>

@@ -81,6 +81,21 @@
             </p>
         </div>
 
+        <hr>
+        <h2>Listagem de funcionários</h2>
+
+        <?php
+
+        $arquivo = fopen("funcionarios.txt", "r");
+
+        while(!feof($arquivo) ){
+            $linha = fgets($arquivo);
+            echo "$linha <br>";
+        }
+        fclose($arquivo);
+
+        ?>
+
     </section>
 </body>
 </html>

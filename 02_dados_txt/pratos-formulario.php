@@ -45,6 +45,21 @@
             </p>
         </div>
 
+        <hr>
+        <h2>Listagem de pratos</h2>
+
+        <?php
+
+        $arquivo = fopen("pratos.txt", "r");
+
+        while(!feof($arquivo) ){
+            $linha = fgets($arquivo);
+            echo "$linha <br>";
+        }
+        fclose($arquivo);
+
+        ?>
+
     </section>
 </body>
 </html>
